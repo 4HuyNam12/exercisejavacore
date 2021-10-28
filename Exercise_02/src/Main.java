@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Vehicle[] listVehicle = new Vehicle[4];
+        Vehicle[] listVehicle = new Vehicle[2];
         for (int i = 0; i < listVehicle.length; i++) {
             System.out.printf("Nhập thông tin phương tiện %d: \n", i + 1);
             System.out.print("Tên: ");
@@ -17,7 +17,7 @@ public class Main {
             listVehicle[i] = vehicle;
         }
         for (Vehicle vehicle : listVehicle) {
-            System.out.println(vehicle);
+            vehicle.display();
         }
     }
 }
