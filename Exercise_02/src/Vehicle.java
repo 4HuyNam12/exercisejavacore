@@ -9,10 +9,6 @@ public class Vehicle {
         speed = vehicleSpeed;
     }
 
-    void display() {
-        System.out.println(name + " - " + id + " - " + speed);
-    }
-
     @Override
     public String toString() {
         return name + " - " + id + " - " + speed;
